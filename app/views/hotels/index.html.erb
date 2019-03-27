@@ -1,0 +1,15 @@
+<%= @hotels.each do |h| %>
+
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h1><%= h.name %></h1>
+    <%= image_tag(h.avatar_url, size: "300x300") %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <p><%= h.description %></p>
+  </div>
+</div>
+
+<% end %>

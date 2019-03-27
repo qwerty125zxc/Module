@@ -1,0 +1,11 @@
+
+      <% @rooms.each do |r| %>
+      <div class="card">
+        <div class="card-header">
+          <h2><%= r.title %></h2>
+        </div>
+        <div class="card-body">
+          <%= image_tag(r.image_url, size: "300x300") %>
+          <p><%= r.description %></p>
+        </div>
+      <% end %>
